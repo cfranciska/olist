@@ -22,6 +22,12 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
+# 3️⃣ Banner utama
+st.image(
+    "main_banner.png",
+    use_container_width=True
+)
+
 # Initialize session state
 if "messages" not in st.session_state:
     st.session_state.messages = []
@@ -229,3 +235,4 @@ st.markdown(
 """,
     unsafe_allow_html=True,
 )
+
